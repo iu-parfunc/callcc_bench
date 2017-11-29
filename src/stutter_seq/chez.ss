@@ -4,6 +4,8 @@
 (define N (string->number (car (command-line-arguments))))
 
 (printf "Iterations: ~a\n" N)
+
+;; This simple thing is not faster with call/1cc:
 (time
 (display
  (let loop ([n N])
